@@ -4,8 +4,8 @@ name: Tag and Export Components
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
+  # pull_request:
+  #   branches: [main]
 
 jobs:
   tag-and-export:
@@ -21,6 +21,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
+      - name: npm login
+        run: npm set //registry.npmjs.org/:_authToken=${NPM_TOKEN}
       - name: Install Bit Version Manager
         run: npm i -g @teambit/bvm
       - name: Install latest Bit version
