@@ -4,8 +4,8 @@ name: Tag and Export Components
 on:
   push:
     branches: [main]
-  # pull_request:
-  #   branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
   tag-and-export:
