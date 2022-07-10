@@ -9,17 +9,5 @@
  */
 
 {
-    "bit-poc-client/types": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "src/dto",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add types",
-            "username": "Jon Park",
-            "email": "jon@jonathanpark.ca"
-        }
-    },
     "$schema-version": "14.9.0"
 }
