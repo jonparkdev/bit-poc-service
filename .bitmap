@@ -15,7 +15,7 @@
         "mainFile": "index.ts",
         "rootDir": "src/dto",
         "nextVersion": {
-            "version": "1.0.0",
+            "version": "2.0.0",
             "message": "",
             "username": "Jon Park",
             "email": "jon@jonathanpark.ca"
