@@ -9,17 +9,5 @@
  */
 
 {
-    "types/bit-poc-service": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "src/dto",
-        "nextVersion": {
-            "version": "patch",
-            "message": "",
-            "username": "Jon Park",
-            "email": "jon@jonathanpark.ca"
-        }
-    },
     "$schema-version": "14.9.0"
 }
