@@ -4,8 +4,6 @@ name: Tag and Export Components
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
 
 jobs:
   tag-and-export:
@@ -16,17 +14,26 @@ jobs:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.ref }}
       - name: Use Node.js 12
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
+      - name: npm login
+        run: |
+          echo "@jonparkdev:registry=https://registry.npmjs.org/" >> ~/.npmrc
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> ~/.npmrc
       - name: Install Bit Version Manager
         run: npm i -g @teambit/bvm
       - name: Install latest Bit version
         run: bvm install
       - name: add bvm bin folder to path
         run: echo "$HOME/bin" >> $GITHUB_PATH
+      - name: Add remote scope
+        run: bit remote add http://143.198.236.141
       - name: Set up bit config
         run: |
           bit config set analytics_reporting false
