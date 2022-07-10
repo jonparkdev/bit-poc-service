@@ -22,7 +22,8 @@ jobs:
         with:
           node-version: 12.x
       - name: npm login
-        run: npm set //registry.npmjs.org/:_authToken=${NPM_TOKEN}
+        run: echo "@jonparkdev:registry=https://registry.npmjs.org/" >> ~/.npmrc
+        run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> ~/.npmrc
       - name: Install Bit Version Manager
         run: npm i -g @teambit/bvm
       - name: Install latest Bit version
