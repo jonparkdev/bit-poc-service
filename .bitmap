@@ -9,13 +9,13 @@
  */
 
 {
-    "types/bit-poc-service": {
+    "dto": {
         "scope": "",
         "version": "",
         "mainFile": "index.ts",
         "rootDir": "src/dto",
         "nextVersion": {
-            "version": "patch",
+            "version": "1.0.0",
             "message": "",
             "username": "Jon Park",
             "email": "jon@jonathanpark.ca"

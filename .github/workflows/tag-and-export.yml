@@ -38,6 +38,8 @@ jobs:
           bit config set user.token $BIT_TOKEN
       - name: Install packages using bit
         run: bit install
+      - name: Add remote scope
+        run: bit remote add http://143.198.236.141/
       - name: Hard-tag pending components
         run: bit tag --persist
       - name: Export components
