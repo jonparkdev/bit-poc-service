@@ -10,16 +10,10 @@
 
 {
     "types": {
-        "scope": "",
-        "version": "",
+        "scope": "jon",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "src/dto",
-        "nextVersion": {
-            "version": "patch",
-            "message": "",
-            "username": "Jon Park",
-            "email": "jon@jonathanpark.ca"
-        }
+        "rootDir": "src/dto"
     },
     "$schema-version": "14.9.0"
 }
