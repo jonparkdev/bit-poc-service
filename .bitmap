@@ -10,16 +10,10 @@
 
 {
     "types/bit-poc-backend": {
-        "scope": "",
-        "version": "",
+        "scope": "jon",
+        "version": "1.0.0",
         "mainFile": "index.ts",
-        "rootDir": "src/dto",
-        "nextVersion": {
-            "version": "1.0.0",
-            "message": "",
-            "username": "Jon Park",
-            "email": "jon@jonathanpark.ca"
-        }
+        "rootDir": "src/dto"
     },
     "$schema-version": "14.9.0"
 }
